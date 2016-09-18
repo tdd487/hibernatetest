@@ -28,6 +28,7 @@ public class App
         String sql = "FROM CountryEntity";
         Query query = session.createQuery(sql);
         System.out.println( query.list());
+        System.out.println(query.list().getClass().getName());
 
     }
 }
